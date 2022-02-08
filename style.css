@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+body {
+  opacity: 0.9;
+  font-family:'Roboto', sans-serif;
+}
+.all {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+nav {
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.slider{
+    position: relative; 
+    max-width: 520px;
+    height: 780px;
+    overflow: hidden;
+}
+
+.middle{
+    margin: auto;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.bar:hover{
+transform: scale(1,1);
+opacity: 0.9;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 600%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 520px;
+    transition: all.6s ease;
+}
+
+.slide img{
+    width: 520px;
+    height: auto;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -520px;
+}
+#r3:checked ~ .s1{
+    margin-left: -1040px;
+}
+#r4:checked ~ .s1{
+    margin-left: -1560px;
+}
+#r5:checked ~ .s1{
+    margin-left: -2080px;
+}
+#r6:checked ~ .s1{
+    margin-left: -2600px;
+}
+
+.info{
+    margin: 40px 0 0 0;
+}
+
+p{
+    margin: 5px 0;
+    padding: 0;
+}
+
+
+
